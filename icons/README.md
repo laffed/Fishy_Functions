@@ -4,20 +4,18 @@ A function to update app icons to custom icons. Especially useful when applicati
 
 ### Setup
 
-**1. Create a directory for custom icons**
-Change `line 9: $HOME/Documents/AppIcons/custom/*` and `line 30: $HOME/Documents/AppIcons/custom/$i/*.icns` to match your directory custom icon directory path. 
+**1. Create a directory for custom icons:**  
+  - Change `line 9: $HOME/Documents/AppIcons/custom/*` and `line 30: $HOME/Documents/AppIcons/custom/$i/*.icns` to match your directory custom icon directory path. 
 
-**2. Create subdirectories for each icon**
-The name of the subdirectories must match the name of the 'App'.app file in `/Applications/`. 
+**2. Create subdirectories for each icon:**  
+  - The name of the subdirectories must match the name of the 'App'.app file in `/Applications/`
+  - Space seperated names make choosing an option from the fish function prompt akward. Thus I've changed multi word 'Multi Word App'.app to file names in `/Applications/` and named my custom icon subdirectory likewise. For example 'Google Chrome'.app was changed to Chrome.app 
 
-Space seperated names make choosing an option from the fish function prompt akward. Thus I've changed multi word 'Multi Word App'.app file names in `/Applications/` and named my custom icon subdirectory likewise. For example 'Google Chrome'.app was changed to Chrome.app. 
-
-**3. Add new app icons to custom subdirectories**
-A good place to find icons is [here](https://macosicons.com/#/). 
-
-Place the custom icons (.icns file) into its custom subdirectory. Rename the custom .icns file exactly corresponding to the default App .icns file. 
-App .icns are located in `/Applications/SomeApp.app/Contents/Resources/`. 
-From the Finder GUI, right click the App > select *Show Package Contents* > `/Contents/Resources/`.
+**3. Add new app icons to custom subdirectories**  
+  - A good place to find icons is [here](https://macosicons.com/#/). 
+  - Place the custom icons (.icns file) into its custom subdirectory. Rename the custom .icns file exactly corresponding to the default App .icns file
+  - App .icns are located in `/Applications/SomeApp.app/Contents/Resources/` 
+  - From the Finder GUI, right click the App > select *Show Package Contents* > `/Contents/Resources/`
 
 Below shows my custom directory structure and my `/Applications/` directory structure ommitting irrelevant apps. 
 
@@ -70,10 +68,10 @@ Below shows my custom directory structure and my `/Applications/` directory stru
 
 ### Flags
 
-1. `-a/--all`
+**1. `-a/--all`**  
   - Update all app icons that have a corresponding custom icon subdirectory
 
-2. `-o/--options`
+**2. `-o/--options`**  
   - Lists all possible argument options (apps to change)
   - If no args are provided, options are listed by default even without flag
 
