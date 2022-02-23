@@ -11,7 +11,7 @@ A function to update app icons to custom icons. Especially useful when applicati
   - The name of the subdirectories must match the name of the 'App'.app file in `/Applications/`
   - Space seperated names make choosing an option from the fish function prompt akward. Thus I've changed multi word 'Multi Word App'.app to file names in `/Applications/` and named my custom icon subdirectory likewise. For example 'Google Chrome'.app was changed to Chrome.app 
 
-**3. Add new app icons to custom subdirectories**  
+**3. Add new app icons to custom subdirectories:**  
   - A good place to find icons is [here](https://macosicons.com/#/). 
   - Place the custom icons (.icns file) into its custom subdirectory. Rename the custom .icns file exactly corresponding to the default App .icns file
   - App .icns are located in `/Applications/SomeApp.app/Contents/Resources/` 
