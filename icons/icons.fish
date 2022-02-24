@@ -28,6 +28,7 @@ function icons --description 'restore custom icons after app updates'
       echo "Selected $i is not an option. Continuing..."
     else 
       cp -f $HOME/Documents/AppIcons/custom/$i/*.icns /Applications/$i.app/Contents/Resources/
+      touch /Applications/$i.app
       set -a confirmed $i
     end
   end
