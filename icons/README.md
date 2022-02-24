@@ -9,12 +9,12 @@ A function to update app icons to custom icons. Especially useful when applicati
 
 **2. Create subdirectories for each icon:**  
   - The name of the subdirectories must match the name of the 'App'.app file in `/Applications/`
-  - Space seperated names make choosing an option from the fish function prompt akward. Thus I've changed multi word 'Multi Word App'.app to file names in `/Applications/` and named my custom icon subdirectory likewise. For example 'Google Chrome'.app was changed to Chrome.app 
+  - App file names that include spaces make choosing an option from the fish function prompt awkward. Thus you should rename multiword .app files to a single word name and name your custom icon subdirectory likewise. For example, rename 'Google Chrome'.app in `/Applications/` Chrome.app and name custom icon subdirectory `~./MyCustomIconPath/custom/Chrome/`
 
 **3. Add new app icons to custom subdirectories:**  
   - A good place to find icons is [here](https://macosicons.com/#/). 
-  - Place the custom icons (.icns file) into its custom subdirectory. Rename the custom .icns file exactly corresponding to the default App .icns file
-  - App .icns are located in `/Applications/SomeApp.app/Contents/Resources/` 
+  - Place the custom icon (.icns file) into its custom subdirectory. Rename the custom .icns file exactly corresponding to the default App .icns file
+  - An App's .icns file is located in `/Applications/SomeApp.app/Contents/Resources/` 
   - From the Finder GUI, right click the App > select *Show Package Contents* > `/Contents/Resources/`
 
 Below shows my custom directory structure and my `/Applications/` directory structure ommitting irrelevant apps. 
@@ -77,7 +77,7 @@ Below shows my custom directory structure and my `/Applications/` directory stru
 
 ### Arguments
 
-Space seperated names of custom icon subdirectories. Ex: 
+Space delimited names of custom icon subdirectories. Ex: 
 ```
 $ icons Alacritty Chrome Teams
   Successfully updated icons:
@@ -86,7 +86,7 @@ $ icons Alacritty Chrome Teams
   0
 ```
 
-If no arguments are provided, user will be prompted with a list of options. User can select any number of options by space deliminating choices. Ex: 
+If no arguments are provided, user will be prompted with a list of options. User can select any number of options by space delimiting choices. Ex: 
 ```
 $ icons 
 Alacritty
@@ -103,7 +103,7 @@ VLC
 Zoom
 $ Choose option(s) from above: Brave Code
 Successfully updated icons:
-2 Hyper Folx
+2 Brave Code
 Failed updated options
 0
 ```
